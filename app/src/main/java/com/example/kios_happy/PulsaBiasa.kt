@@ -26,7 +26,7 @@ class PulsaBiasa : AppCompatActivity() {
         }
     }
 
-    fun kirimPulsa(nomorTujuan: String, jumlahPulsa: String){
+    private fun kirimPulsa(nomorTujuan: String, jumlahPulsa: String){
         val kirim = "tel:" + "*777*" + nomorTujuan + "*"+jumlahPulsa+"*999"+Uri.encode("#")
         val intent = Intent(Intent.ACTION_CALL);
         intent.data = Uri.parse(kirim)
