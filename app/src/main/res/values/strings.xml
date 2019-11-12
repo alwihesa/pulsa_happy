@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Kios Happy</string>
+    <string name="btn_pulsa_biasa">Pulsa Biasa</string>
+    <string name="btn_token">Token</string>
+    <string name="pls_20">20</string>
+    <string name="pls_50">50</string>
+    <string name="pls_100">100</string>
+    <string name="pls_200">200</string>
+    <string name="nmr1">085298355553</string>
+    <string name="nmr2">085298553335</string>
+</resources>

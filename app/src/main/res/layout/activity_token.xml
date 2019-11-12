@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Token">
+
+    <TextView
+        android:id="@+id/TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="58dp"
+        android:layout_marginLeft="58dp"
+        android:layout_marginTop="40dp"
+        android:text="Nomor Token"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/ed_nmr_tlpn"
+        android:layout_width="297dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="16dp"
+        android:background="#C8D7DD"
+        android:ems="10"
+        android:hint="Nomor Token"
+        android:inputType="textPersonName"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextView" />
+
+    <TextView
+        android:id="@+id/tf_token"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="58dp"
+        android:layout_marginLeft="58dp"
+        android:layout_marginTop="30dp"
+        android:text="Token"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ed_nmr_tlpn" />
+
+
+    <RadioGroup
+        android:id="@+id/rg_pulsa"
+        android:layout_width="293dp"
+        android:layout_height="175dp"
+        android:layout_marginTop="20dp"
+        android:checkedButton="@id/pls_10"
+        android:orientation="vertical"
+        android:verticalScrollbarPosition="defaultPosition"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tf_token">
+
+        <RadioButton
+            android:id="@+id/pls_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:paddingLeft="10dp"
+            android:text="20"
+            android:verticalScrollbarPosition="defaultPosition" />
+
+        <RadioButton
+            android:id="@+id/pls_50"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:paddingLeft="10dp"
+            android:text="50" />
+
+        <RadioButton
+            android:id="@+id/pls_100"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:paddingLeft="10dp"
+            android:text="100" />
+
+        <RadioButton
+            android:id="@+id/pls_200"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:paddingLeft="10dp"
+            android:text="200" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_kirim2"
+        android:layout_width="299dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="40dp"
+        android:background="#1AD523"
+        android:text="KIRIM"
+        android:textColor="#0D4E09"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rg_pulsa" />
+
+    <RadioGroup
+        android:id="@+id/rg_nmr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:checkedButton="@id/nmr_krm1"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_kirim2">
+
+        <RadioButton
+            android:id="@+id/nmr_krm1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:text="085298355553"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/nmr_krm2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginRight="40dp"
+            android:text="085298355553"
+            android:textSize="16sp" />
+
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
