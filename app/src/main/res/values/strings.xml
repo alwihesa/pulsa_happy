@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Kios Happy</string>
+    <string name="app_name">Pulsa Happy</string>
     <string name="btn_pulsa_biasa">Pulsa Biasa</string>
     <string name="btn_token">Token</string>
     <string name="pls_20">20</string>
